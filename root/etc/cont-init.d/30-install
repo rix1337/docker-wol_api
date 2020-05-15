@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+
+pip install wol_apiwol_api -U -q
+
+chown -R abc:abc /config/
