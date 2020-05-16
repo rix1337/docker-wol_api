@@ -1,5 +1,3 @@
 #!/usr/bin/with-contenv bash
 
 pip install wol_api -U -q
-
-chown -R abc:abc /config/
