@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+    docker-wol-api:
+        container_name: WakeOnLAN-API
+        environment:
+            - PORT=8080
+        network_mode: host
+        image: rix1337/docker-wol-api
