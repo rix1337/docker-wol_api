@@ -2,7 +2,7 @@ FROM lsiobase/alpine.python3
 MAINTAINER rix1337
 
 # build tools
-RUN apk add --no-cache python3-dev libffi-dev gcc musl-dev make
+RUN apk add --no-cache python3-dev libffi-dev gcc build-base musl-dev make
 
 # dependencies
 RUN pip install --upgrade pip
