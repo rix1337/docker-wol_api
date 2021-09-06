@@ -3,7 +3,7 @@ name: Build Image
 on: [push, pull_request, workflow_dispatch]
 
 env:
-  ENDPOINT: "rix1337/docker-docker-wol_api"
+  ENDPOINT: "rix1337/docker-wol_api"
   BRANCH: "master"
 
 jobs:
