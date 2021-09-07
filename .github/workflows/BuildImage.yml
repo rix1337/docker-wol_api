@@ -24,8 +24,6 @@ jobs:
       - name: Credential check
         if: ${{ github.ref == format('refs/heads/{0}', env.BRANCH) }}
         run: |
-          echo "CR_USER=${{ secrets.CR_USER }}" >> $GITHUB_ENV
-          echo "CR_PAT=${{ secrets.CR_PAT }}" >> $GITHUB_ENV
           echo "DOCKERUSER=${{ secrets.DOCKERUSER }}" >> $GITHUB_ENV
           echo "DOCKERPASS=${{ secrets.DOCKERPASS }}" >> $GITHUB_ENV
           if [[ "${{ secrets.DOCKERUSER }}" == "" && "${{ secrets.DOCKERPASS }}" == "" ]]; then
